@@ -22,7 +22,7 @@ nav {
     color: white;
     width: 100%;
     background-color: rgba(44, 62, 80);
-    border-radius: 12px;
+    border-radius: 6px;
 }
 
 nav h1 {
@@ -53,13 +53,17 @@ nav a:hover {
     color: rgba(71, 152, 213);
 }
 
+nav a:focus {
+    color: rgba(71, 152, 213);
+}
+
 .sidebar {
-    background-color: rgba(44, 62, 80);
+    background-color: rgba(52, 73, 94);
     grid-template-areas: "sidebar";
     color: white;
     padding-left: 2%;
     padding-top: 3%;
-    border-radius: 12px;
+    border-radius: 6px;
 }
 
 .menu{
@@ -80,6 +84,8 @@ nav a:hover {
     color: rgba(149, 165, 166)
 }
 
-.manu:focus {
+.sidebar a:focus {
     background-color: rgba(44, 62, 80);
 }
+
+

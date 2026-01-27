@@ -33,6 +33,47 @@
             </li>
         </ul>
     </aside>
+    <main class="content">
+        <h2>Contact Form with Pseudo Selectors</h2>
+        <p>This form demonstrates CSS pseudo selectors <span>:hover, :active, focus </span>
+            and <span>:nth-child</span>.</p>
+        <form class="form-group">
+            <div class="form-gruop"><label for="name">Full name:</label>
+                <input type="text" id="name" class="name" placeholder="enter your name">
+            </div>
+            <div class="form-gruop">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" class="email" placeholder="your.example@gmail.com">
+            </div>
+            <div class="form-gruop">
+                <label for="phone">Phone Number:</label>
+                <input type="number" id="number" class="number" placeholder="(123) 456-789">
+            </div>
+            <div class="form-gruop">
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" class="subject" placeholder="What is this about?">
+            </div>
+            <div class="form-gruop">
+                <label for="message">Message:</label>
+                <input type="text" id="message" class="message">
+            </div>
+            <div class="form-gruop">
+                <label for="priority">Priority Level:</label>
+                <select name="priority" id="priority">
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                    <option value="urgent">Urgent</option>
+                </select>
+            </div>
+            <div class="from-group checkbox-group"><label>
+                    <input type="checkbox" name="subscribe">Subscribe to news letter</label>
+                <label><input type="checkbox" name="terms">I agree to terms and conditions</label>
+            </div>
+            <button type="button">Submit Form</button>
+            <button type="reset">Reset Form</button>
+        </form>
+    </main>
 
 </body>
 
