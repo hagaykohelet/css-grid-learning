@@ -33,52 +33,56 @@
             </li>
         </ul>
     </aside>
-    <main class="contact-from">
-        <h2>contact form with pseudo selectors</h2>
-        <p>this form demonstrates various CSS pseudo selectors: <strong>:hover :active, :focus,</strong>and
-            <strong>:nth-child.</strong>
-        </p>
-        <form class="form-group">
-            <div class="form-group name">
-                <label for="name">Full Name:</label>
-                <input type="text" name="name" id="name" class="name" placeholder="enter your name">
-            </div>
+    <form class="contact-form">
+        <div class="form-group">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        </div>
 
-            <div class="form-group email">
-                <label for="email">email address</label>
-                <input type="email" name="email" id="email" placeholder="name.email@gmail.com">
-            </div>
-            <div class="form-group phone">
-                <label for="phone">phone number:</label>
-                <input type="number" name="phone" id="phone" placeholder="123456789">
-            </div>
-            <div class="form-group message">
-                <label for="subject">subject:</label>
-                <input type="text" id="subject" name="subject" placeholder="what is this about">
-            </div>
-            <div class="form-group message">
-                <label for="message">message:</label>
-                <textarea name="message" id="message" placeholder="your massage here..."></textarea>
-            </div>
-            <div class="form-group priority">
-                <label for="priority">priority lavel:</label>
-                <select name="priority" id="priority">
-                    <option value="low">low</option>
-                    <option value="madium">madium</option>
-                    <option value="high">high</option>
-                </select>
-            </div>
-            <div class="checkbox">
-                <label>
-                    <input type="checkbox" name="subscribe">
-                    subscribe
-                </label>
-                <label>
-                    <input type="checkbox" name="terms">
-                    i agree to terms and conditions
-                </label>
-            </div>
-        </form>
+        <div class="form-group">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="(123) 456-7890">
+        </div>
+
+        <div class="form-group">
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" placeholder="What is this about?" required>
+        </div>
+
+        <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" placeholder="Type your message here..." required></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="priority">Priority Level:</label>
+            <select id="priority" name="priority">
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+                <option value="urgent">Urgent</option>
+            </select>
+        </div>
+
+        <div class="form-group checkbox-group">
+            <label>
+                <input type="checkbox" name="newsletter"> Subscribe to newsletter
+            </label>
+            <label>
+                <input type="checkbox" name="terms" required> I agree to terms and conditions
+            </label>
+        </div>
+
+        <div class="button-group">
+            <button type="submit" class="btn-submit" disabled>Submit Form</button>
+            <button type="reset" class="btn-reset">Reset Form</button>
+        </div>
+    </form>
 
     </main>
 
