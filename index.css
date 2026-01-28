@@ -8,7 +8,7 @@ body {
     background-color: rgba(244, 244, 244);
     font-family: Arial, Helvetica, sans-serif;
     display: grid;
-    grid-template-rows: 15% 25% 50% ;
+    grid-template-rows: 10% 15% 60%;
     grid-template-areas:
         "navbar"
         "sidebar"
@@ -67,12 +67,15 @@ nav a:focus {
     border-radius: 6px;
 }
 
-.menu{
+.menu {
     margin-top: 3%;
     width: 95%;
+    list-style: none;
+
 }
+
 .sidebar a {
-    
+
     display: flex;
     flex-direction: column;
     text-decoration: none;
@@ -89,50 +92,59 @@ nav a:focus {
     background-color: rgba(44, 62, 80);
 }
 
-.content {
+.contact-from {
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border: 1px solid white;
     border-radius: 6px;
-    padding-top: 2%;
-    padding-left: 1%;
-
+    padding: 30px;
 }
 
- .content p {
-    font-size: 90%;
+.contact-from p {
+    font-size: 110%;
+    padding-top: 2%;
 }
 
 form {
-    padding-left: 2%;
+    padding-top: 2%;
     height: 100%;
 }
 
+label{
+    font-size: 130%;
+}
 input {
-    margin-bottom:3% ;
+    margin-bottom: 3%;
+    width: 100%;
+    height: 2rem;
+    padding: 30px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    outline: none;
+    font-size: 21px;
 }
 
- .message {
-    height: 7rem;    
-
- } 
-
-input {
-  /* width: 100%;
-  
-  */
-  padding: 12px;
-  margin: 8px 0;
-  box-sizing: border-box;
-  border: 3px solid #ccc;
-  outline: none;
+textarea {
+    height: 7rem;
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    outline: none;
+    font-size: 21px;
 }
 
-.content span {
-    font-size: 110%;
-}
- 
-.checkbox-group {
+
+
+.checkbox {
     display: flex;
     flex-direction: column;
+}
+
+.form-group{
+    height: 40%;
+}
+.group {
+    height: 300px;
 }

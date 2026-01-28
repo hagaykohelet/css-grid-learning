@@ -33,46 +33,53 @@
             </li>
         </ul>
     </aside>
-    <main class="content">
-        <h3>Contact Form with Pseudo Selectors</h3>
-        <p>This form demonstrates CSS pseudo selectors <span>:hover, :active, focus </span>
-            and <span>:nth-child</span>.</p>
+    <main class="contact-from">
+        <h2>contact form with pseudo selectors</h2>
+        <p>this form demonstrates various CSS pseudo selectors: <strong>:hover :active, :focus,</strong>and
+            <strong>:nth-child.</strong>
+        </p>
         <form class="form-group">
-            <div class="form-label"><label for="name">Full name:</label><br>
-                <input type="text" id="name" class="name" placeholder="enter your name">
+            <div class="form-group name">
+                <label for="name">Full Name:</label>
+                <input type="text" name="name" id="name" class="name" placeholder="enter your name">
             </div>
-            <div class="form-label">
-                <label for="email">Email Address:</label><br>
-                <input type="email" id="email" class="email" placeholder="your.example@gmail.com">
+
+            <div class="form-group email">
+                <label for="email">email address</label>
+                <input type="email" name="email" id="email" placeholder="name.email@gmail.com">
             </div>
-            <div class="form-label">
-                <label for="phone">Phone Number:</label><br>
-                <input type="number" id="number" class="number" placeholder="(123) 456-789">
+            <div class="form-group phone">
+                <label for="phone">phone number:</label>
+                <input type="number" name="phone" id="phone" placeholder="123456789">
             </div>
-            <div class="form-label">
-                <label for="subject">Subject:</label><br>
-                <input type="text" id="subject" class="subject" placeholder="What is this about?">
+            <div class="form-group message">
+                <label for="subject">subject:</label>
+                <input type="text" id="subject" name="subject" placeholder="what is this about">
             </div>
-            <div class="form-label">
-                <label for="message">Message:</label><br>
-                <input type="text" id="message" class="message">
+            <div class="form-group message">
+                <label for="message">message:</label>
+                <textarea name="message" id="message" placeholder="your massage here..."></textarea>
             </div>
-            <div class="form-label">
-                <label for="priority">Priority Level:</label>
+            <div class="form-group priority">
+                <label for="priority">priority lavel:</label>
                 <select name="priority" id="priority">
-                    <option value="low">Low</option>
-                    <option value="medium">Medium</option>
-                    <option value="high">High</option>
-                    <option value="urgent">Urgent</option>
+                    <option value="low">low</option>
+                    <option value="madium">madium</option>
+                    <option value="high">high</option>
                 </select>
             </div>
-            <div class="form-group checkbox-group"><label>
-                    <input type="checkbox" name="subscribe">Subscribe to news letter</label>
-                <label><input type="checkbox" name="terms">I agree to terms and conditions</label>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" name="subscribe">
+                    subscribe
+                </label>
+                <label>
+                    <input type="checkbox" name="terms">
+                    i agree to terms and conditions
+                </label>
             </div>
-            <button type="button">Submit Form</button>
-            <button type="reset">Reset Form</button>
         </form>
+
     </main>
 
 </body>
